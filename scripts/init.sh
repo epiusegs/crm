@@ -34,13 +34,13 @@ bench set-redis-socketio-host redis-socketio:6379
 sed -i '/redis/d' ./Procfile
 
 
-bench new-site dev.localhost \
+bench new-site dev.altrix \
 --mariadb-root-password 123 \
 --admin-password admin \
 --no-mariadb-socket
 
-bench --site dev.localhost set-config developer_mode 1
-bench --site dev.localhost clear-cache
-bench use dev.localhost
-bench get-app crm
-bench --site dev.localhost install-app crm
+bench --site dev.altrix set-config developer_mode 1
+bench --site dev.altrix clear-cache
+bench use dev.altrix
+bench get-app https://github.com/epiusegs/crm crm dev_altrix_one_develop
+bench --site dev.altrix install-app crm
