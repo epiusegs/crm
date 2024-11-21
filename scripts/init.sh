@@ -42,5 +42,5 @@ bench new-site dev.altrix \
 bench --site dev.altrix set-config developer_mode 1
 bench --site dev.altrix clear-cache
 bench use dev.altrix
-bench get-app https://github.com/epiusegs/crm crm dev_altrix_one_develop
+bench get-app https://github.com/epiusegs/crm crm Dev_CRM_CS
 bench --site dev.altrix install-app crm
