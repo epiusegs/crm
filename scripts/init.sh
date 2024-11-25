@@ -42,5 +42,7 @@ bench new-site dev.altrixone \
 bench --site dev.altrixone set-config developer_mode 1
 bench --site dev.altrixone clear-cache
 bench use dev.altrixone
+bench get-app https://github.com/epiusegs/erpnext --branch dev_altrix_one_develop
+bench --site dev.altrixone install-app erpnext
 bench get-app https://github.com/epiusegs/crm --branch dev_altrix_one_develop
 bench --site dev.altrixone install-app crm
